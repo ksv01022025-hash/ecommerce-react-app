@@ -1,0 +1,19 @@
+.categoryGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 17px;
+    margin: 18px 0
+}
+
+.status {
+    min-height: 376px;
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: #666
+}
+
+.status p { margin: 0 0 12px }
+.status button { justify-self: center; border: 0; border-radius: 4px; background: var(--orange); color: #fff; padding: 8px 18px; cursor: pointer }
+
+@media(max-width:700px){.categoryGrid{grid-template-columns:repeat(2,1fr);gap:10px}}

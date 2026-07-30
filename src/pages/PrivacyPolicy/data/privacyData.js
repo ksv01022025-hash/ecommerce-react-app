@@ -1,0 +1,5 @@
+export const highlights=[['♙','Information We Collect',['We collect information you provide','directly and automatically when','you use our services.']],['▣','How We Use Information',['We use your information to provide,','improve, and personalize your','experience with Shopora.']],['♧','Information Sharing',['We do not sell your personal data.','We share only with trusted','partners and service providers.']],['♢','Your Rights',['You have the right to access,','update, or delete your personal','information.']]]
+
+export const policyLinks=['1. Introduction','2. Information We Collect','3. How We Use Information','4. Sharing of Information','5. Cookies and Tracking','6. Data Security','7. Your Rights & Choices','8. Third-Party Links','9. Children’s Privacy','10. Changes to This Policy','11. Contact Us']
+
+export const perks=[['♧','Free Shipping','On orders over ₹999'],['⟳','Easy Returns','7-day return policy'],['♢','Secure Payment','100% secure checkout'],['☏','24/7 Support',"We're here for you"]]

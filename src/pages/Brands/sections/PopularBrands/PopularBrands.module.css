@@ -1,0 +1,6 @@
+.heading { display: flex; align-items: center; justify-content: space-between; margin: 18px 0 11px; border-bottom: 2px solid var(--orange); padding-bottom: 9px; }
+.heading h2 { margin: 0; font-size: 17px; }
+.heading a { color: var(--orange); font-size: 10px; }
+.popularGrid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 9px; }
+@media (max-width: 900px) { .popularGrid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 650px) { .popularGrid { display: flex; overflow-x: auto; } }

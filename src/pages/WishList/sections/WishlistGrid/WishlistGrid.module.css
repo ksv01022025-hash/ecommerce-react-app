@@ -1,0 +1,2 @@
+.products { display: grid; grid-template-columns: repeat(3, 1fr); gap: 17px; }
+@media(max-width:650px) { .products { display: flex; overflow-x: auto; padding-bottom: 8px; } }

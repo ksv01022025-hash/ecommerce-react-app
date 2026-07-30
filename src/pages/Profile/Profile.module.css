@@ -1,0 +1,9 @@
+.profile { max-width: 1320px; min-height: 600px; margin: auto; padding: 24px 3%; color: var(--ink); }
+.crumb { color: #777; font-size: 11px; margin: 0 0 20px; }
+.profile > h1 { margin: 0 0 5px; font-size: 25px; }
+.subtitle { margin: 0 0 18px; color: #555; font-size: 12px; }
+.layout { display: grid; grid-template-columns: 285px minmax(500px, 1fr) 345px; gap: 22px; align-items: start; }
+.center, .right { display: grid; gap: 16px; }
+.profile > a { color: var(--orange); }
+@media(max-width:1100px){.layout{grid-template-columns:230px 1fr}.right{grid-column:2}}
+@media(max-width:760px){.profile{padding:20px 15px}.layout{grid-template-columns:1fr}.right{grid-column:auto}}

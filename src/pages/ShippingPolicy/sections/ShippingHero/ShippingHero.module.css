@@ -1,0 +1,17 @@
+.crumb { padding: 20px 0 14px; color: #737680; font-size: 11px; }
+.crumb a { color: inherit; text-decoration: none; }
+.crumb span { margin-left: 11px; }
+.hero { min-height: 206px; display: flex; justify-content: space-between; }
+.hero h1 { margin: 18px 0 14px; font-size: 34px; letter-spacing: -1.4px; }
+.hero p { margin: 0; line-height: 1.7; font-size: 12px; }
+.truckArt { width: 520px; height: 200px; position: relative; overflow: hidden; background: radial-gradient(ellipse at 58% 48%, #fff0e9 0 43%, transparent 44%); }
+.city { position: absolute; right: 30px; bottom: 30px; width: 250px; height: 83px; background: linear-gradient(90deg, #fce6da 0 8%, transparent 8% 15%, #fce6da 15% 23%, transparent 23% 35%, #fce6da 35% 49%, transparent 49% 58%, #fce6da 58% 67%, transparent 67% 76%, #fce6da 76%); opacity: .75; }
+.truck { position: absolute; left: 110px; bottom: 31px; width: 185px; height: 75px; background: #ffd9c1; border-radius: 2px; }
+.truck::before { content: ""; position: absolute; left: -42px; bottom: 0; border-bottom: 75px solid var(--orange); border-left: 32px solid transparent; width: 50px; }
+.truck::after { content: ""; position: absolute; left: -25px; top: 20px; width: 28px; height: 20px; background: #d9edf3; }
+.truck i, .truck em { position: absolute; bottom: -16px; width: 31px; height: 31px; border: 9px solid #555; border-radius: 50%; background: #d9d9d9; }
+.truck i { left: 27px; } .truck em { right: 24px; }
+.truck strong { position: absolute; right: 33px; top: 21px; color: #c86f38; font-size: 30px; }
+.boxes { position: absolute; right: 52px; bottom: 31px; padding: 16px; background: #e8ba84; color: #b67644; font-size: 26px; line-height: .9; }
+.pin { position: absolute; color: var(--orange); font-size: 27px; } .one { left: 66px; top: 72px; } .two { right: 114px; top: 29px; }
+@media (max-width: 650px) { .hero { min-height: 160px; } .hero h1 { font-size: 29px; margin: 12px 0; } .hero p { font-size: 10px; } .truckArt { display: none; } }

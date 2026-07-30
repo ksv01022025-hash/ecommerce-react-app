@@ -1,0 +1,14 @@
+.collection { height: 180px; border-radius: 8px; overflow: hidden; background: #f7ede5; position: relative; }
+.collection > div { position: absolute; z-index: 2; left: 67px; top: 34px; }
+.collection p { color: var(--orange); text-transform: uppercase; letter-spacing: 1px; font-size: 10px; font-weight: 600; margin: 0 0 7px; }
+.collection h1 { font-size: 31px; letter-spacing: -1.4px; margin: 0 0 2px; }
+.collection span { font-size: 12px; }
+.collection a { display: block; background: #121212; color: white; text-decoration: none; border-radius: 3px; width: 122px; text-align: center; margin-top: 14px; padding: 8px; font-size: 11px; font-weight: 600; }
+.collection img { position: absolute; width: 53%; height: 100%; right: 4%; object-fit: cover; object-position: center 30%; mask-image: linear-gradient(90deg, transparent, black 20%); }
+@media(max-width:1000px) { .collection > div { left: 35px; } }
+@media(max-width:700px) {
+    .collection { height: 205px; }
+    .collection > div { left: 24px; top: 29px; }
+    .collection h1 { font-size: 27px; }
+    .collection img { width: 75%; right: -15%; opacity: .65; }
+}

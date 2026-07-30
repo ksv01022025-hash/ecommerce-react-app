@@ -1,0 +1,17 @@
+:root {
+  --orange: #ff5a24;
+  --ink: #131313;
+  --muted: #666;
+  --line: #e8e6e3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "DM Sans", Arial, sans-serif;
+  font-size: 14px;
+}

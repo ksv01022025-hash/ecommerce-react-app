@@ -1,0 +1,2 @@
+import styles from './TermsHero.module.css'
+export default function TermsHero(){return <section className={styles.hero}><div><h1>Terms & Conditions</h1><p>Please read these terms and conditions carefully before<br/>using the Shopora website and services.</p><small>▣ Last updated: May 18, 2024</small></div><div className={styles.art}><div className={styles.clipboard}><b>TERMS &<br/>CONDITIONS</b><span>✓ ━━━━<br/>✓ ━━━━<br/>✓ ━━━━<br/> ━━━━</span></div><div className={styles.shield}>✓</div><div className={styles.pen}>╱</div><i>♠</i></div></section>}

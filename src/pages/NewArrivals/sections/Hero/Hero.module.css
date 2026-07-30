@@ -1,0 +1,17 @@
+.hero { height: 238px; position: relative; background: linear-gradient(100deg, #fbf5f0, #ead9c5); border-radius: 9px; overflow: hidden; }
+.hero > div { position: absolute; z-index: 2; left: 42px; top: 41px; }
+.hero p { margin: 0 0 11px; color: var(--orange); font-size: 10px; text-transform: uppercase; font-weight: 600; }
+.hero h1 { font-size: 42px; letter-spacing: -2px; margin: 0 0 8px; }
+.hero span { font-size: 14px; line-height: 1.5; }
+.hero a { display: block; background: #111; color: white; width: 91px; margin-top: 13px; padding: 10px; text-align: center; border-radius: 3px; font-size: 10px; }
+.hero > img { height: 100%; width: 54%; right: 5%; position: absolute; object-fit: cover; object-position: center 24%; mask-image: linear-gradient(90deg, transparent, black 18%); }
+.hero > b { position: absolute; z-index: 2; right: 23px; top: 67px; background: white; border-radius: 50%; width: 86px; height: 86px; color: var(--orange); font-size: 21px; text-align: center; padding-top: 9px; }
+.hero > b small { display: block; color: #111; font-size: 10px; line-height: 1.35; margin-top: 2px; }
+@media(max-width:650px) {
+    .hero { height: 310px; }
+    .hero > div { left: 25px; top: 32px; }
+    .hero h1 { font-size: 35px; }
+    .hero > img { width: 100%; height: 56%; right: -15%; bottom: 0; top: auto; opacity: .75; mask-image: linear-gradient(180deg, transparent, black 30%); }
+    .hero > b { right: 18px; top: 21px; width: 70px; height: 70px; font-size: 17px; }
+    .hero > b small { font-size: 8px; }
+}

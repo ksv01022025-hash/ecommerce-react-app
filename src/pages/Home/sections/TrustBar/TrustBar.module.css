@@ -1,0 +1,19 @@
+.container { max-width: 1220px; margin: 0 auto; padding-left: 10px; padding-right: 10px; }
+.trustBar { height: 119px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; }
+.trustBar > div { display: flex; gap: 13px; padding: 0 13px; border-right: 1px solid #eee; }
+.trustBar > div:last-child { border: 0; }
+.trustBar span { flex: 0 0 43px; width: 43px; height: 43px; border: 1px solid #e5e5e5; border-radius: 50%; display: grid; place-items: center; font-size: 22px; }
+.trustBar p { margin: 0; }
+.trustBar b, .trustBar small { display: block; }
+.trustBar b { font-size: 11px; margin: 3px 0 6px; }
+.trustBar small { font-size: 10px; line-height: 1.5; color: #333; }
+
+@media (max-width: 900px) {
+  .container { padding-left: 24px; padding-right: 24px; }
+  .trustBar { height: auto; padding-top: 25px; padding-bottom: 25px; gap: 20px; grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 620px) {
+  .trustBar { grid-template-columns: 1fr; gap: 18px; padding: 23px 24px; }
+  .trustBar > div { border-right: 0; padding: 0; }
+}

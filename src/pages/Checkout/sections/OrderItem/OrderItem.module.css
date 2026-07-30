@@ -1,0 +1,12 @@
+.item { display: flex; align-items: center; gap: 13px; margin: 12px 0; }
+.item img { width: 69px; height: 55px; object-fit: cover; border-radius: 5px; background: #f5f5f4; }
+.item p { margin: 0; flex: 1; }
+.item b, .item small { display: block; }
+.item b { font-size: 11px; margin-bottom: 5px; }
+.item small { font-size: 9px; color: #666; line-height: 1.35; }
+.item strong { font-size: 12px; align-self: flex-start; margin-top: 3px; }
+.controls { display: flex; align-items: center; gap: 5px; margin-top: 7px; }
+.controls button { min-width: 24px; height: 23px; border: 1px solid #ddd; border-radius: 3px; background: #fff; cursor: pointer; }
+.controls button:disabled { cursor: not-allowed; opacity: .45; }
+.controls strong { min-width: 18px; margin: 0; text-align: center; }
+.controls .remove { width: auto; margin-left: 4px; padding: 0 7px; color: #c62828; }

@@ -1,0 +1,11 @@
+.heading { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; }
+.heading h2 { font-size: 18px; margin: 0; }
+.heading span { font-size: 11px; color: #666; }
+.products { display: grid; grid-template-columns: repeat(4, 1fr); gap: 13px; }
+.products[aria-busy="true"] { opacity: .55; }
+.view { display: block; background: #111; color: white; border: 0; border-radius: 4px; padding: 10px 23px; font: 10px "DM Sans"; margin: 13px auto 11px; }
+.status { min-height: 220px; display: grid; place-content: center; text-align: center; color: #666; }
+.status p { margin: 0 0 12px; }
+.status button { justify-self: center; border: 0; border-radius: 4px; background: var(--orange); color: white; padding: 8px 18px; cursor: pointer; }
+@media(max-width:900px) { .products { grid-template-columns: repeat(3, 1fr); } }
+@media(max-width:650px) { .products { display: flex; overflow-x: auto; padding-bottom: 7px; } }

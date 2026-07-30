@@ -1,0 +1,8 @@
+.highlights { display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; }
+.highlights article { min-height: 208px; border: 1px solid var(--line); border-radius: 7px; text-align: center; padding: 21px; box-shadow: 0 2px 8px #11100006; }
+.highlights b { display: grid; place-items: center; border-radius: 50%; background: #ffefe7; color: var(--orange); width: 58px; height: 58px; margin: auto; font-size: 27px; }
+.highlights h2 { margin: 13px 0 7px; font-size: 15px; }
+.highlights i { display: block; width: 29px; height: 2px; margin: auto; background: var(--orange); }
+.highlights p { margin: 14px 0; font-size: 11px; line-height: 1.7; }
+@media (max-width: 700px) { .highlights { grid-template-columns: repeat(2, 1fr); } }
+@media (max-width: 450px) { .highlights { grid-template-columns: 1fr; } .highlights article { min-height: auto; } }

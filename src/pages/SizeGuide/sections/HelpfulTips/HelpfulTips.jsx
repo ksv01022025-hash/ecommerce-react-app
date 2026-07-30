@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom'
+import styles from './HelpfulTips.module.css'
+const tips=[['⌁','Between Sizes?',<>If you're between two sizes, we recommend<br/>choosing the larger size for a more comfortable fit.</>],['♜','Fit Preference',<>Our sizes are based on regular fit.<br/>For a loose fit, consider sizing up.</>],['♧','Fabric Matters',<>Some fabrics may shrink slightly after the first wash.<br/>Check product descriptions for details.</>],['⟳','Still Unsure?',<>Our customer support team is happy to help<br/>you find your perfect size.</>]]
+export default function HelpfulTips(){return <section className={styles.tips}><h2>Helpful Tips</h2>{tips.map(([icon,title,text])=><article key={title}><b>{icon}</b><div><h3>{title}</h3><p>{text}</p></div></article>)}<Link to="/help/returns-exchanges">View Return & Exchange Policy →</Link></section>}

@@ -1,0 +1,10 @@
+export const quickLinks=[{href:'#shop',icon:'🛍️',label:'Shop'},{href:'#account',icon:'♙',label:'My Account'},{href:'#support',icon:'☏',label:'Support'},{href:'#about',icon:'◈',label:'About Us'}]
+export const sitemapGroups=[
+{id:'shop',icon:'🛍',title:'Shop',description:'Discover our latest collections.',links:[['All Products','/shop'],['New Arrivals','/new-arrivals'],['Best Sellers','/shop?sort=best-selling'],['Deals & Offers','/deals']]},
+{icon:'▦',title:'Categories',description:'Browse products by category.',links:['Men','Women','Kids','Footwear','Bags','Watches','Accessories','Beauty'].map(x=>[x,`/shop?category=${encodeURIComponent(x)}`])},
+{icon:'♧',title:'Customer Service',description:'We are always here to help.',links:[['Contact Us','/help/contact'],['Shipping Policy','/help/shipping-policy'],['Returns & Exchanges','/help/returns-exchanges'],['FAQ','/help/faq'],['Track Your Order','/order-history'],['Size Guide','/help/size-guide']]},
+{id:'account',icon:'♙',title:'My Account',description:'Manage your Shopora account.',links:[['Login / Sign Up','/login'],['My Profile','/profile'],['My Orders','/order-history'],['Wishlist','/wishlist'],['Rewards & Points','/profile/rewards'],['Payment Methods','/profile/settings']]},
+{id:'support',icon:'☏',title:'Help & Support',description:'Get quick help for your queries.',links:[['Contact Support','/help/contact'],['Order Tracking','/order-history'],['Returns & Refunds','/profile/returns'],['Payment Help','/help/payment-help'],['Privacy & Security','/company/privacy']]},
+{id:'about',icon:'◈',title:'About Shopora',description:'Learn more about our brand.',links:[['About Us','/company/about'],['Our Brands','/brands'],['Careers','/company/careers'],['Terms & Conditions','/company/terms'],['Privacy Policy','/company/privacy'],['Cookie Policy','/company/cookie-policy']]},
+]
+export const perks=[{icon:'♧',title:'Free Shipping',text:'On orders over ₹999'},{icon:'⟳',title:'Easy Returns',text:'7-day return policy'},{icon:'♢',title:'Secure Payment',text:'100% secure checkout'},{icon:'☏',title:'24/7 Support',text:"We're here for you"}]

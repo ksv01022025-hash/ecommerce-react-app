@@ -1,0 +1,56 @@
+export const orders = [
+  {
+    id: "SP12345678",
+    placed: "15 May 2024, 10:30 AM",
+    status: "Delivered",
+    statusIcon: "⊙",
+    statusClass: "delivered",
+    total: "₹6,998",
+    payment: "UPI",
+    items: [
+      { name: "Chrono Black Watch", price: "₹3,499", photo: "photo-1523275335684-37898b6baf30" },
+      { name: "Minimal White Sneakers", price: "₹2,499", photo: "photo-1542291026-7eec264c27ff" },
+      { name: "Aviator Sunglasses", price: "₹1,299", photo: "photo-1511499767150-a48a237f0083" },
+    ],
+  },
+  {
+    id: "SP12345011",
+    placed: "02 May 2024, 08:15 PM",
+    status: "Shipped",
+    statusIcon: "♧",
+    statusClass: "shipped",
+    total: "₹2,998",
+    payment: "Credit Card",
+    items: [
+      { name: "Premium Leather Backpack", price: "₹2,999", photo: "photo-1553062407-98eeb64c6a62" },
+    ],
+    delivery: { className: "blue", label: "Expected Delivery", date: "18 May 2024" },
+  },
+  {
+    id: "SP12344789",
+    placed: "20 Apr 2024, 06:45 PM",
+    status: "Processing",
+    statusIcon: "⌛",
+    statusClass: "processing",
+    total: "₹1,999",
+    payment: "UPI",
+    items: [
+      { name: "Elegant Maxi Dress", price: "₹1,999", photo: "photo-1515372039744-b8f02a3ae446" },
+    ],
+    delivery: { className: "yellow", label: "Estimated Delivery", date: "24 May 2024" },
+  },
+  {
+    id: "SP12344055",
+    placed: "10 Apr 2024, 11:20 AM",
+    status: "Cancelled",
+    statusIcon: "⊗",
+    statusClass: "cancelled",
+    total: "₹4,198",
+    payment: "Net Banking",
+    items: [
+      { name: "Linen Blend Shirt", price: "₹1,499", photo: "photo-1603252109303-2751441dd157" },
+      { name: "Chrono Black Watch", price: "₹2,699", photo: "photo-1523275335684-37898b6baf30" },
+    ],
+    delivery: { className: "gray", label: "Cancelled on", date: "10 Apr 2024" },
+  },
+];

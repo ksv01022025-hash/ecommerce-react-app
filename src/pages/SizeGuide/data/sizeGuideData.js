@@ -1,0 +1,2 @@
+export const sizeRows=[['S','36″','91 cm','16.5″','42 cm','26″','66 cm','7.5″','19 cm'],['M','38″','97 cm','17.5″','44 cm','27″','69 cm','8″','20 cm'],['L','40″','102 cm','18.5″','47 cm','28″','71 cm','8.5″','21 cm'],['XL','42″','107 cm','19.5″','49 cm','29″','74 cm','9″','23 cm'],['XXL','44″','112 cm','20.5″','52 cm','30″','76 cm','9.5″','24 cm']]
+export const perks=[['♧','Free Shipping','On orders over ₹999'],['⟳','Easy Returns','7-day return policy'],['♢','Secure Payment','100% secure checkout'],['☏','24/7 Support',"We're here for you"]]

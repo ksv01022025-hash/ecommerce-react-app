@@ -1,0 +1,14 @@
+.steps { height: 63px; border: 1px solid #e3e3e3; border-radius: 7px; display: flex; align-items: center; padding: 0 22px; }
+.steps > div { display: flex; align-items: center; gap: 12px; min-width: 125px; }
+.steps b { width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: #f1f2f3; font-size: 12px; }
+.steps .active b { background: var(--orange); color: white; }
+.steps p { margin: 0; }
+.steps strong, .steps small { display: block; }
+.steps strong { font-size: 11px; }
+.steps small { font-size: 9px; color: #666; margin-top: 3px; }
+.steps > i { height: 1px; background: #e5e5e5; flex: 1; margin: 0 13px; }
+@media(max-width:700px) {
+    .steps { overflow-x: auto; padding: 0 12px; }
+    .steps > div { min-width: 105px; }
+    .steps > i { min-width: 20px; margin: 0 4px; }
+}

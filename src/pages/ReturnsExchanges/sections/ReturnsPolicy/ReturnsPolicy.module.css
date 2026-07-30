@@ -1,0 +1,19 @@
+.grid { display: grid; grid-template-columns: 1.5fr .95fr; gap: 39px; margin-top: 23px; }
+.policy h2, .ineligible h2, .help h2 { margin: 0; font-size: 18px; }
+.underline { display: block; width: 29px; height: 2px; background: var(--orange); margin: 10px 0 12px; }
+.intro { margin: 0 0 12px; line-height: 1.6; font-size: 11px; }
+.policy article, .ineligible article { display: flex; padding: 11px 0; border-bottom: 1px solid var(--line); }
+.policy article:last-child, .ineligible article:last-child { border: 0; }
+.policy article > b, .ineligible article > b { display: grid; place-items: center; border-radius: 50%; background: #ffefe7; color: var(--orange); height: 47px; flex: 0 0 47px; margin-right: 15px; font-size: 21px; }
+.policy h3, .ineligible h3 { margin: 0 0 4px; font-size: 12px; }
+.policy p, .ineligible p { margin: 0; font-size: 10.5px; line-height: 1.6; }
+.ineligible, .help { border-radius: 7px; background: linear-gradient(120deg, #fff7f1, #fffdfb); padding: 20px 25px; }
+.ineligible article { padding: 12px 0; }
+.ineligible article > b { height: 33px; flex-basis: 33px; margin-right: 16px; background: #fff; font-size: 16px; }
+.help { margin-top: 13px; }
+.help h2 { font-size: 15px; }
+.help p { font-size: 10.5px; line-height: 1.5; }
+.help a, .help span { display: block; margin: 8px 0; color: var(--orange); font-size: 10.5px; text-decoration: none; }
+.help span { color: #303037; }
+.help a:last-child { width: 100%; margin-top: 10px; padding: 8px; border: 1px solid var(--orange); border-radius: 4px; background: #fff; text-align: center; font-weight: 600; }
+@media (max-width: 850px) { .grid { grid-template-columns: 1fr; gap: 15px; } }

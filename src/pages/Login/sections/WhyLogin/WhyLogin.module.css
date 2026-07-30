@@ -1,0 +1,24 @@
+.why { position: relative; overflow: hidden; background: radial-gradient(circle at 80% 55%, #f0e1d4, #f9f1eb 62%, #fcfafa); }
+.whyCopy { position: absolute; z-index: 3; left: 87px; top: 65px; }
+.whyCopy h2 { font-size: 23px; margin: 0 0 40px; }
+.whyCopy > div { display: flex; align-items: center; gap: 20px; margin-bottom: 35px; }
+.whyCopy i { display: grid; place-items: center; width: 49px; height: 49px; border-radius: 50%; background: #feeadf; color: var(--orange); font-size: 25px; font-style: normal; }
+.whyCopy p { margin: 0; }
+.whyCopy b, .whyCopy small { display: block; }
+.whyCopy b { font-size: 14px; margin-bottom: 7px; }
+.whyCopy small { font-size: 12px; line-height: 1.45; }
+.why > img { position: absolute; object-fit: cover; }
+.bagPhoto { width: 260px; height: 260px; right: -30px; top: -12px; border-radius: 40px; }
+.watchPhoto { width: 130px; height: 270px; right: 160px; bottom: 4px; }
+.glassesPhoto { width: 175px; height: 75px; right: 20px; bottom: 158px; }
+
+@media(max-width:1000px) { .whyCopy { left: 35px; } }
+@media(max-width:700px) {
+    .why { height: 490px; }
+    .whyCopy { left: 25px; top: 35px; }
+    .whyCopy h2 { margin-bottom: 25px; }
+    .whyCopy > div { margin-bottom: 22px; }
+    .bagPhoto { width: 180px; height: 180px; opacity: .45; }
+    .watchPhoto { right: 45px; width: 100px; height: 210px; opacity: .55; }
+    .glassesPhoto { display: none; }
+}

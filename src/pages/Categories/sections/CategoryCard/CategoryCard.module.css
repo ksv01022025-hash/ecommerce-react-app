@@ -1,0 +1,94 @@
+.tile {
+    height: 171px;
+    background: #f7f5f3;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    text-decoration: none;
+    color: var(--ink)
+}
+
+.tile img {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 54%;
+    height: 100%;
+    object-fit: cover
+}
+
+.tile div {
+    position: absolute;
+    left: 59%;
+    top: 58px
+}
+
+.tile h2 {
+    font-size: 17px;
+    letter-spacing: -.7px;
+    margin: 0 0 2px
+}
+
+.tile p {
+    font-size: 12px;
+    margin: 0;
+    color: #555
+}
+
+.tile i {
+    font-style: normal;
+    margin-top: 14px;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #fff;
+    box-shadow: 0 2px 6px #ddd;
+    font-size: 20px
+}
+
+.women img,
+.kids img {
+    width: 51%;
+    object-position: center 18%
+}
+
+.footwear img {
+    width: 60%;
+    object-position: center
+}
+
+.footwear div {
+    left: 61%
+}
+
+.bags img {
+    width: 55%;
+    object-position: center
+}
+
+.watches img {
+    width: 54%;
+    object-position: center
+}
+
+.accessories img {
+    width: 59%;
+    object-position: center
+}
+
+.accessories div {
+    left: 58%
+}
+
+.beauty img {
+    width: 60%;
+    object-position: center
+}
+
+.beauty div {
+    left: 58%
+}
+
+@media(max-width:700px){.tile{height:155px}.tile div{left:54%;top:43px}.tile h2{font-size:14px}.tile p{font-size:10px}.tile i{width:29px;height:29px;margin-top:10px;font-size:17px}}

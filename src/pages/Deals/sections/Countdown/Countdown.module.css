@@ -1,0 +1,50 @@
+.count {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    margin-top: 14px
+}
+
+.count div {
+    width: 73px;
+    height: 60px;
+    border: 1px solid #454545;
+    border-radius: 7px;
+    text-align: center;
+    padding-top: 8px
+}
+
+.count b,
+.count small {
+    display: block
+}
+
+.count b {
+    font-size: 22px;
+    letter-spacing: 2px
+}
+
+.count small {
+    font-size: 9px
+}
+
+.count i {
+    font-style: normal;
+    font-size: 22px
+}
+
+@media(max-width:700px) {
+    .count {
+        gap: 5px
+    }
+
+    .count div {
+        width: 56px;
+        height: 52px
+    }
+
+    .count b {
+        font-size: 18px
+    }
+
+}

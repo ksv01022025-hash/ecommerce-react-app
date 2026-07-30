@@ -1,0 +1,2 @@
+export const contactItems=[['☎','Call Us',['+91 98765 43210','Mon – Sat: 9:00 AM – 8:00 PM']],['✉','Email Us',['support@shopora.com','We reply within 24 hours']],['☏','Live Chat',['Chat with our expert','Mon – Sat: 9:00 AM – 10:00 PM']],['●','Our Location',['Chennai, Tamil Nadu, India','600001']]]
+export const perks=[['♧','Free Shipping','On orders over ₹999'],['⟳','Easy Returns','7-day return policy'],['♢','Secure Payment','100% secure checkout'],['♧','24/7 Support',"We're here for you"]]

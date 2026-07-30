@@ -1,0 +1,10 @@
+.catalogTools { height: 45px; display: flex; justify-content: space-between; align-items: center; font-size: 11px; }
+.catalogTools > div { display: flex; align-items: center; gap: 11px; }
+.catalogTools button { height: 25px; border: 1px solid #ddd; background: #fff; border-radius: 6px; padding: 0 16px; font: 11px "DM Sans"; }
+.catalogTools select { height: 29px; border: 1px solid #ddd; background: #fff; border-radius: 6px; padding: 0 9px; font: 10px "DM Sans"; }
+.catalogTools .grid { color: var(--orange); border-color: var(--orange); font-size: 18px; padding: 0 10px; }
+@media(max-width:700px) {
+    .catalogTools { height: auto; gap: 11px; align-items: flex-start; padding: 12px 0; }
+    .catalogTools > div { flex-wrap: wrap; justify-content: flex-end; }
+    .catalogTools button { padding: 0 8px; }
+}

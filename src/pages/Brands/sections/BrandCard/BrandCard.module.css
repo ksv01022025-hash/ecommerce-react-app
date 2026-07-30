@@ -1,0 +1,19 @@
+.brand { height: 97px; border: 1px solid #e8e8e8; border-radius: 6px; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-weight: 700; font-size: 21px; line-height: .8; }
+.compact { height: 94px; }
+.brand small { display: block; margin-top: 15px; font-size: 9px; font-weight: 400; color: #555; }
+.adidas { font-size: 20px; } .puma { font-size: 19px; }
+.levis, .hm { color: #df1520; font-size: 24px; }
+.zara { font-family: serif; font-size: 28px; }
+.gucci { font-family: serif; font-size: 15px; line-height: 1; }
+.nb { color: #dc1c24; font-size: 29px; font-style: italic; }
+.reebok { font-size: 17px; color: #24365c; } .vans { color: #d91d22; }
+.north { font-size: 10px; line-height: .7; } .fila { color: #17275c; } .ua { font-size: 8px; }
+.asics { color: #213c80; font-style: italic; font-size: 25px; }
+.sketch { color: #213364; font-size: 15px; font-style: italic; }
+.converse { font-size: 12px; }
+.tommy { font-size: 8px; line-height: 1; background: #13255a; color: white; padding: 3px; }
+.calvin { font-size: 15px; font-weight: 400; } .jack { font-size: 14px; }
+.biba { color: #bd1d2b; font-family: serif; font-size: 25px; }
+.mango { font-size: 16px; } .forever { font-size: 14px; letter-spacing: 1px; }
+.loreal { font-size: 18px; font-weight: 400; } .maybelline { font-size: 11px; letter-spacing: 2px; }
+@media (max-width: 650px) { .brand { min-width: 125px; } }

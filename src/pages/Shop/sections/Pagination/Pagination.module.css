@@ -1,0 +1,4 @@
+.pagination { display: flex; justify-content: center; align-items: center; gap: 9px; margin: 10px 0 13px; }
+.pagination button { width: 30px; height: 20px; border: 1px solid #e4e4e4; background: white; border-radius: 4px; font: 10px "DM Sans"; }
+.pagination button:disabled { cursor: not-allowed; opacity: .45; }
+.pagination .current { color: white; background: var(--orange); border-color: var(--orange); }

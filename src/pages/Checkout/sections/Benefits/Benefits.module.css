@@ -1,0 +1,16 @@
+.benefits { height: 66px; border-radius: 7px; background: #fff8f4; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; margin: 14px 0; }
+.benefits > div { display: flex; align-items: center; gap: 13px; padding-left: 40px; border-right: 1px solid #eee; }
+.benefits > div:last-child { border: 0; }
+.benefits i { width: 40px; height: 40px; border-radius: 50%; background: #ffede3; color: var(--orange); display: grid; place-items: center; font-style: normal; font-size: 20px; }
+.benefits p { margin: 0; }
+.benefits b, .benefits small { display: block; }
+.benefits b { font-size: 10px; margin-bottom: 3px; }
+.benefits small { font-size: 9px; }
+@media(max-width:1000px) { .benefits > div { padding-left: 15px; } }
+@media(max-width:700px) {
+    .benefits { height: auto; grid-template-columns: 1fr 1fr; padding: 12px 0; gap: 10px; }
+    .benefits > div { padding-left: 15px; gap: 7px; border: 0; }
+    .benefits i { width: 34px; height: 34px; font-size: 17px; }
+    .benefits b { font-size: 9px; }
+    .benefits small { font-size: 8px; }
+}

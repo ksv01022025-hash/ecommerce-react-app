@@ -1,0 +1,4 @@
+.pages { text-align: center; }
+.pages button { width: 32px; height: 26px; margin: 0 3px; background: #fff; border: 1px solid #e3e3e3; border-radius: 4px; font: 11px "DM Sans"; }
+.pages button:disabled { cursor: not-allowed; opacity: .45; }
+.pages .current { color: var(--orange); border-color: var(--orange); }

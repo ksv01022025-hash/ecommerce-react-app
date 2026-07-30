@@ -1,0 +1,23 @@
+.wrap {
+    max-width: 1180px;
+    margin: auto;
+}
+
+.crumb {
+    height: 39px;
+    color: #777;
+    font-size: 10px;
+    padding-top: 13px;
+}
+
+@media (max-width: 900px) {
+    .wrap {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 650px) {
+    .wrap {
+        padding: 0 15px;
+    }
+}

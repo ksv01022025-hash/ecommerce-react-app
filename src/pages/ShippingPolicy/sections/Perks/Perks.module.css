@@ -1,0 +1,9 @@
+.perks { display: grid; grid-template-columns: repeat(4, 1fr); margin: 24px 0 22px; border-radius: 7px; padding: 11px; background: var(--cream); }
+.perks > div { display: flex; align-items: center; padding-left: 35px; border-right: 1px solid #f0e3dc; }
+.perks > div:last-child { border: 0; }
+.perks b { margin-right: 14px; color: var(--orange); font-size: 24px; }
+.perks p { margin: 0; line-height: 1.5; }
+.perks strong { display: block; font-size: 10px; }
+.perks span { font-size: 10px; color: #4e4f56; }
+@media (max-width: 650px) { .perks { grid-template-columns: repeat(2, 1fr); } .perks > div { border: 0; padding: 8px 15px; } }
+@media (max-width: 400px) { .perks { grid-template-columns: 1fr; } }

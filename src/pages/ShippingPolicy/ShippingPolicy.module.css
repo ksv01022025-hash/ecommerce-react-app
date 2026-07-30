@@ -1,0 +1,2 @@
+.page { --orange: #ff5018; --ink: #151515; --line: #e6e8eb; --cream: #fff7f2; max-width: 1280px; margin: 0 auto; color: var(--ink); font-size: 13px; }
+@media (max-width: 850px) { .page { padding: 0 15px; } }

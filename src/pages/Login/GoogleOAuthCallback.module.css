@@ -1,0 +1,5 @@
+.page { min-height: 420px; display: grid; place-items: center; padding: 30px 16px; background: #fffaf7; }
+.page section { width: min(460px, 100%); padding: 36px; border: 1px solid #ece5e1; border-radius: 12px; background: #fff; text-align: center; box-shadow: 0 10px 35px rgb(35 22 15 / 8%); }
+.page h1 { margin: 0 0 10px; font-size: 24px; }
+.page p { margin: 0 0 20px; color: #666; line-height: 1.6; }
+.page a { color: #ff5018; font-weight: 700; }

@@ -1,0 +1,21 @@
+.recent { height: 64px; border: 1px solid #fde5da; border-radius: 7px; margin-bottom: 8px; display: grid; grid-template-columns: 430px 1fr; overflow: hidden; }
+.newsletter { background: #fff8f3; display: flex; align-items: center; padding-left: 75px; gap: 18px; }
+.newsletter > span { border-radius: 50%; width: 47px; height: 47px; display: grid; place-items: center; background: #fff0e6; color: var(--orange); font-size: 23px; }
+.newsletter p { margin: 0; }
+.newsletter b, .newsletter small { display: block; }
+.newsletter b { font-size: 12px; }
+.newsletter small { font-size: 9px; margin-top: 3px; }
+.recentProducts { display: flex; align-items: center; gap: 28px; }
+.recentProducts > b { align-self: flex-start; margin-top: 5px; font-size: 11px; }
+.recentProducts > div { display: flex; gap: 15px; align-items: center; }
+.recentProducts img { width: 84px; height: 38px; border-radius: 4px; object-fit: cover; background: #f4f4f4; }
+@media(max-width:1000px) {
+    .recent { grid-template-columns: 290px 1fr; }
+    .newsletter { padding-left: 20px; }
+    .recentProducts img:nth-last-child(-n+2) { display: none; }
+}
+@media(max-width:700px) {
+    .recent { grid-template-columns: 1fr; height: auto; }
+    .newsletter { padding: 10px 20px; }
+    .recentProducts { display: none; }
+}

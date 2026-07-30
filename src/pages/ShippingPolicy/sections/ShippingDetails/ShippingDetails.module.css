@@ -1,0 +1,13 @@
+.grid { display: grid; grid-template-columns: 1.2fr 1fr; gap: 38px; margin-top: 29px; }
+.shipping h2, .know h2 { margin: 0; font-size: 19px; }
+.underline { display: block; width: 29px; height: 2px; background: var(--orange); margin: 10px 0 14px; }
+.shipping article, .know article { display: flex; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.shipping article:last-child, .know article:last-child { border: 0; }
+.shipping article > b, .know article > b { display: grid; place-items: center; border-radius: 50%; background: #ffefe7; color: var(--orange); flex: 0 0 47px; height: 47px; margin-right: 18px; font-size: 22px; }
+.shipping h3, .know h3 { margin: 0 0 5px; font-size: 12px; }
+.shipping p, .know p { margin: 0; font-size: 11px; line-height: 1.62; }
+.know { padding: 27px 32px 13px; border-radius: 7px; background: linear-gradient(120deg, #fff7f1, #fffdfb); }
+.know article { padding: 15px 0; }
+.know article > b { width: 32px; height: 32px; flex-basis: 32px; margin-right: 17px; background: #fff; font-size: 16px; }
+.know a { display: inline-block; margin-top: 5px; color: var(--orange); font-size: 10px; font-weight: 600; text-decoration: none; }
+@media (max-width: 850px) { .grid { grid-template-columns: 1fr; gap: 15px; } }

@@ -1,0 +1,25 @@
+.wrap {
+    max-width: 1430px;
+    margin: auto
+}
+
+.crumb {
+    height: 39px;
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+    color: #666
+}
+
+@media(max-width:1050px) {
+    .wrap {
+        padding: 0 20px
+    }
+
+}
+@media(max-width:700px) {
+    .wrap {
+        padding: 0 15px
+    }
+
+}

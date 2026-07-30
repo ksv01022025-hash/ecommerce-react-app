@@ -1,0 +1,11 @@
+.process { margin-top: 15px; padding: 17px 22px; border: 1px solid var(--line); border-radius: 7px; }
+.process h2 { margin: 0; font-size: 18px; }
+.process > i { display: block; width: 29px; height: 2px; background: var(--orange); margin: 10px 0 12px; }
+.process > div { display: flex; align-items: center; justify-content: space-between; text-align: center; margin-top: 11px; }
+.step { display: flex; align-items: center; justify-content: space-between; flex: 1; }
+.step article { width: 145px; }
+.step article > b { display: grid; place-items: center; width: 45px; height: 45px; margin: auto; border-radius: 50%; background: #ffefe7; color: var(--orange); font-size: 18px; }
+.step h3 { margin: 8px 0 3px; font-size: 11px; }
+.step p { margin: 0; font-size: 9px; line-height: 1.45; }
+.step > strong { font-size: 22px; font-weight: 400; }
+@media (max-width: 700px) { .process > div { display: grid; grid-template-columns: 1fr; gap: 10px; } .step { display: block; } .step article { width: auto; } .step > strong { display: block; transform: rotate(90deg); margin: 8px; } }

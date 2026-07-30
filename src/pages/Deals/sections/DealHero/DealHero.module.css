@@ -1,0 +1,136 @@
+.dealHero {
+    height: 214px;
+    position: relative;
+    overflow: hidden;
+    background: radial-gradient(circle at 75% 45%, #392616, #131313 36%, #080808 75%);
+    border-radius: 8px;
+    color: white
+}
+
+.heroCopy {
+    position: absolute;
+    z-index: 3;
+    left: 49px;
+    top: 23px
+}
+
+.heroCopy>p {
+    color: var(--orange);
+    margin: 0 0 7px;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600
+}
+
+.heroCopy h1 {
+    font-size: 31px;
+    letter-spacing: -1px;
+    margin: 0 0 7px
+}
+
+.heroCopy>span {
+    font-size: 12px;
+    line-height: 1.4
+}
+
+.sale {
+    position: absolute;
+    z-index: 4;
+    left: 51.2%;
+    top: 58px;
+    border-radius: 50%;
+    width: 105px;
+    height: 105px;
+    background: var(--orange);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column
+}
+
+.sale small {
+    font-size: 13px;
+    letter-spacing: 1px
+}
+
+.sale b {
+    font-size: 37px;
+    line-height: 1
+}
+
+.dealHero>img {
+    position: absolute;
+    z-index: 2;
+    height: 88%;
+    width: 190px;
+    object-fit: cover;
+    bottom: 7px;
+    right: 25%;
+    border-radius: 30px 30px 8px 8px
+}
+
+.dealHero .watch {
+    right: 17%;
+    width: 150px;
+    object-fit: contain;
+    bottom: -8px;
+    border-radius: 0
+}
+
+.dealHero .shoe {
+    right: 5%;
+    width: 245px;
+    height: 65%;
+    object-fit: cover;
+    border-radius: 0;
+    bottom: 8px
+}
+
+@media(max-width:700px) {
+    .dealHero {
+        height: 320px
+    }
+
+    .heroCopy {
+        left: 25px;
+        top: 24px
+    }
+
+    .heroCopy h1 {
+        font-size: 28px
+    }
+
+    .sale {
+        left: auto;
+        right: 22px;
+        top: 34px;
+        width: 86px;
+        height: 86px
+    }
+
+    .sale b {
+        font-size: 29px
+    }
+
+    .dealHero>img {
+        width: 130px;
+        height: 145px;
+        right: 33%;
+        bottom: 0
+    }
+
+    .dealHero .watch {
+        right: 15%;
+        height: 150px;
+        width: 80px
+    }
+
+    .dealHero .shoe {
+        width: 155px;
+        height: 95px;
+        right: -4%;
+        bottom: 0
+    }
+
+}

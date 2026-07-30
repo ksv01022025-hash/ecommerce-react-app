@@ -1,0 +1,106 @@
+.footer {
+  margin-top: 14px;
+  background: #fff;
+  color: var(--ink);
+}
+
+.foot {
+  max-width: 1180px;
+  height: 144px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 2.1fr repeat(3, 1.3fr) 1.7fr;
+  padding: 17px 30px;
+  gap: 28px;
+}
+
+.logo {
+  color: var(--ink);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 22px;
+  letter-spacing: -1.8px;
+}
+
+.logo span {
+  color: inherit;
+}
+
+.foot p {
+  font-size: 10px;
+  line-height: 1.4;
+  margin: 7px 0;
+}
+
+.foot a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.foot a:hover {
+  color: var(--orange);
+}
+
+.foot>div:not(:first-child) {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  font-size: 9px;
+}
+
+.foot b {
+  font-size: 10px;
+  margin-bottom: 4px;
+}
+
+.pay {
+  border-left: 1px solid #ddd;
+  padding-left: 31px;
+}
+
+.pay strong {
+  font-size: 10px;
+  color: inherit;
+  margin-top: 6px;
+}
+
+.pay strong span {
+  color: inherit;
+}
+
+.copyright {
+  background: #fff;
+  color: var(--ink);
+  text-align: center;
+  height: 27px;
+  padding: 7px;
+  border-top: 1px solid #eee;
+  border-radius: 0;
+  font-size: 10px;
+}
+
+@media (max-width: 900px) {
+  .foot {
+    padding-left: 25px;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 650px) {
+  .foot {
+    height: auto;
+    grid-template-columns: 1fr 1fr;
+    padding: 23px;
+    gap: 18px;
+  }
+
+  .foot>div:first-child,
+  .pay {
+    grid-column: span 2;
+  }
+
+  .pay {
+    padding: 0;
+    border: 0;
+  }
+}

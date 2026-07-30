@@ -1,0 +1,13 @@
+.perks { height: 70px; background: #fff7f2; border-radius: 8px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; margin: 14px 0; }
+.perks > div { display: flex; align-items: center; gap: 15px; padding-left: 41px; border-right: 1px solid #eee; }
+.perks > div:last-child { border: 0; }
+.perks i { display: grid; place-items: center; width: 46px; height: 46px; border-radius: 50%; background: #ffede2; color: var(--orange); font-style: normal; font-size: 22px; }
+.perks p { margin: 0; } .perks b, .perks small { display: block; }
+.perks b { font-size: 10px; margin-bottom: 4px; }
+.perks small { font-size: 9px; line-height: 1.4; }
+@media (max-width: 900px) { .perks > div { padding-left: 15px; } }
+@media (max-width: 650px) {
+  .perks { height: auto; grid-template-columns: 1fr 1fr; padding: 13px 0; gap: 13px; }
+  .perks > div { padding-left: 12px; border: 0; gap: 8px; }
+  .perks i { width: 36px; height: 36px; font-size: 18px; }
+}

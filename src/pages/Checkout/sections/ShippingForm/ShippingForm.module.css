@@ -1,0 +1,34 @@
+.address { border: 1px solid #e3e3e3; border-radius: 7px; margin-top: 17px; padding: 17px 20px; position: relative; }
+.sectionHead { display: flex; justify-content: space-between; align-items: center; margin-bottom: 18px; }
+.address h2 { font-size: 15px; margin: 0 0 12px; }
+.sectionHead span { font-size: 10px; }
+.sectionHead a { color: var(--orange); }
+.fields { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px 18px; }
+.fields label { font-size: 10px; font-weight: 600; }
+.fields input, .fields select, .address textarea { margin-top: 5px; width: 100%; height: 29px; border: 1px solid #dcdde0; border-radius: 4px; padding: 0 11px; font: 10px "DM Sans"; color: #777; background: white; }
+.fields .wide { grid-column: span 1; }
+.save { display: block; margin: 11px 0 21px; font-size: 10px; }
+.save input { accent-color: var(--orange); vertical-align: -2px; }
+.delivery { height: 47px; border: 1px solid #e5e5e5; border-radius: 5px; margin: 10px 0; display: flex; align-items: center; padding: 0 17px; gap: 13px; }
+.delivery.selected { border-color: #ffd8c7; background: #fff9f5; }
+.delivery input { accent-color: var(--orange); }
+.delivery p { margin: 0; }
+.delivery b, .delivery small { display: block; }
+.delivery b { font-size: 10px; }
+.delivery small { font-size: 9px; color: #666; margin-top: 2px; }
+.delivery strong { margin-left: auto; font-size: 10px; }
+.delivery.selected strong { color: var(--green); }
+.delivery del { color: #777; font-size: 8px; display: block; text-align: right; }
+.address h2 small { font-size: 10px; font-weight: 400; }
+.address textarea { height: 43px; resize: none; padding-top: 10px; }
+.continue { float: right; margin-top: 5px; width: 253px; height: 29px; background: linear-gradient(90deg, #ff4014, #ff621d); border: 0; border-radius: 4px; color: white; font: 10px "DM Sans"; }
+.continue:disabled { cursor: not-allowed; opacity: .55; }
+.error { margin: 10px 0 0; border-radius: 4px; background: #fff0ed; padding: 8px 10px; color: #b42318; font-size: 10px; }
+@media(max-width:1000px) { .fields { grid-template-columns: repeat(2, 1fr); } }
+@media(max-width:700px) {
+    .address { padding: 15px; }
+    .sectionHead span { display: none; }
+    .fields { grid-template-columns: 1fr; }
+    .fields .wide { grid-column: span 1; }
+    .continue { width: 100%; float: none; }
+}

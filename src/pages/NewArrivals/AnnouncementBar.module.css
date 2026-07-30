@@ -1,0 +1,2 @@
+.note { height: 38px; background: #faf8f6; text-align: center; padding: 11px; font-size: 12px; }
+@media(max-width:650px) { .note { height: 30px; padding: 8px; font-size: 9px; } }

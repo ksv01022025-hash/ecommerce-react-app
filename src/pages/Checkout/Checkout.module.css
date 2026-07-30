@@ -1,0 +1,7 @@
+.wrap { max-width: 1320px; margin: auto; }
+.crumb { height: 38px; padding-top: 12px; color: #777; font-size: 11px; }
+.pageTitle { font-size: 28px; margin: 2px 0 7px; }
+.pageTitle small { color: var(--green); font-size: 12px; margin-left: 11px; letter-spacing: 0; }
+.layout { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+@media(max-width:1000px) { .wrap { padding: 0 20px; } .layout { grid-template-columns: 1.6fr 1fr; } }
+@media(max-width:700px) { .wrap { padding: 0 15px; } .pageTitle { font-size: 25px; } .layout { display: flex; flex-direction: column; } }

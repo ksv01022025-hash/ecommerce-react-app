@@ -1,0 +1,13 @@
+.wishlistHead { display: flex; justify-content: space-between; align-items: center; margin: 0 0 18px; }
+.wishlistHead h1 { font-size: 28px; letter-spacing: -1px; margin: 0 0 5px; }
+.wishlistHead h1 small { font-size: 13px; margin-left: 8px; }
+.wishlistHead h1 i { color: var(--orange); font-style: normal; font-size: 24px; margin-left: 8px; }
+.wishlistHead p { margin: 0; font-size: 12px; }
+.wishlistHead button { height: 36px; border: 1px solid #e0e0e0; border-radius: 5px; background: #fff; font: 11px "DM Sans"; padding: 0 18px; margin-left: 16px; }
+.wishlistHead .move { background: linear-gradient(90deg, #ff4215, #ff621d); border: 0; color: #fff; }
+@media(max-width:650px) {
+    .wishlistHead { align-items: flex-start; }
+    .wishlistHead h1 { font-size: 25px; }
+    .wishlistHead > div:last-child { display: flex; flex-direction: column; gap: 6px; }
+    .wishlistHead button { margin: 0; height: 30px; padding: 0 10px; font-size: 9px; }
+}

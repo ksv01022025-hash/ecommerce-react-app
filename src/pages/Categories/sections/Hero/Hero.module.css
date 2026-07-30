@@ -1,0 +1,46 @@
+.hero {
+    height: 208px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(100deg, #fbf6f1, #f5e8dc)
+}
+
+.hero>div {
+    position: absolute;
+    z-index: 2;
+    top: 51px;
+    left: 49px
+}
+
+.hero p {
+    margin: 0 0 10px;
+    color: var(--orange);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: .8px
+}
+
+.hero h1 {
+    font-size: 43px;
+    letter-spacing: -2px;
+    margin: 0 0 8px
+}
+
+.hero span {
+    font-size: 16px;
+    color: #444
+}
+
+.hero img {
+    height: 100%;
+    width: 51%;
+    position: absolute;
+    right: 2%;
+    object-fit: cover;
+    object-position: center 27%;
+    mask-image: linear-gradient(90deg, transparent, black 18%)
+}
+
+@media(max-width:700px){.hero{height:270px}.hero>div{top:30px;left:28px}.hero h1{font-size:33px}.hero span{font-size:14px}.hero img{width:100%;height:64%;right:-16%;bottom:0;top:auto;opacity:.75;mask-image:linear-gradient(180deg,transparent,black 35%)}}

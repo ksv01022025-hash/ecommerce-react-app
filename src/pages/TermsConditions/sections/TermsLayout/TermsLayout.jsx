@@ -1,0 +1,4 @@
+import { Link } from 'react-router-dom'
+import styles from './TermsLayout.module.css'
+import { pageLinks, terms } from '../../data/termsData'
+export default function TermsLayout(){return <section className={styles.layout}><aside><section className={styles.onPage}><h2>On this page</h2>{pageLinks.map((link,index)=><a className={index===0?styles.active:undefined} key={link}>{link}</a>)}</section><section className={styles.need}><b>☏</b><h2>Have Questions?</h2><p>If you have any questions about<br/>these Terms & Conditions,<br/>please contact us.</p><Link to="/help/contact">Contact Us →</Link></section></aside><section className={styles.copy}>{terms.map(([title,text])=><article key={title}><h2>{title}</h2><p>{text}</p></article>)}<button type="button">Read Full Terms & Conditions (Detailed) ⌄</button></section></section>}

@@ -1,0 +1,13 @@
+.also { font-size: 16px; }
+.recommend { display: grid; grid-template-columns: repeat(4, 1fr); gap: 14px; }
+.recommend article { border: 1px solid #eee; border-radius: 5px; overflow: hidden; padding-bottom: 9px; }
+.recommend a { color: inherit; text-decoration: none; }
+.recommend img { width: 100%; height: 135px; object-fit: cover; }
+.recommend b, .recommend span, .recommend strong { display: block; margin: 6px 11px; font-size: 10px; }
+.recommend span { color: #ff9c00; }
+.recommend strong { font-size: 13px; }
+
+@media(max-width:700px) {
+  .recommend { display: flex; overflow-x: auto; }
+  .recommend article { min-width: 170px; }
+}

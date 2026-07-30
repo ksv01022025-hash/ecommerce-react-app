@@ -1,0 +1,11 @@
+.filters { display: flex; align-items: center; gap: 26px; height: 32px; margin-bottom: 12px; }
+.filters button { border: 0; background: white; font: 10px "DM Sans"; height: 30px; }
+.filters .selected { background: #111; color: #fff; border-radius: 3px; padding: 0 14px; }
+.filters label { font-size: 10px; margin-left: auto; color: #555; white-space: nowrap; }
+.filters .sort { height: 30px; border: 1px solid #e4e4e4; background: white; border-radius: 5px; padding: 0 15px; font: 10px "DM Sans"; }
+@media(max-width:900px) { .filters { gap: 12px; } }
+@media(max-width:650px) {
+    .filters { overflow-x: auto; gap: 15px; }
+    .filters button { white-space: nowrap; }
+    .filters label { margin-left: 0; }
+}

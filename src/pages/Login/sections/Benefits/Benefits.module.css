@@ -1,0 +1,17 @@
+.benefits { height: 72px; background: #fff8f4; border-radius: 9px; display: grid; grid-template-columns: repeat(4, 1fr); align-items: center; margin: 17px 0; }
+.benefits > div { display: flex; align-items: center; gap: 15px; padding-left: 65px; border-right: 1px solid #eee; }
+.benefits > div:last-child { border: 0; }
+.benefits i { display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #ffede3; color: var(--orange); font-size: 24px; font-style: normal; }
+.benefits p { margin: 0; }
+.benefits b, .benefits small { display: block; }
+.benefits b { font-size: 11px; margin-bottom: 5px; }
+.benefits small { font-size: 10px; }
+
+@media(max-width:1000px) { .benefits > div { padding-left: 20px; } }
+@media(max-width:700px) {
+    .benefits { height: auto; grid-template-columns: 1fr 1fr; padding: 13px 0; gap: 10px; }
+    .benefits > div { padding-left: 15px; border: 0; gap: 8px; }
+    .benefits i { width: 36px; height: 36px; font-size: 18px; }
+    .benefits b { font-size: 10px; }
+    .benefits small { font-size: 9px; }
+}

@@ -1,0 +1,26 @@
+.container { max-width: 1220px; margin: 0 auto; padding-left: 10px; padding-right: 10px; }
+.categories { padding-top: 38px; padding-bottom: 43px; }
+.sectionHeading { display: flex; align-items: center; justify-content: space-between; margin: 0 0 17px; }
+.centered { position: relative; justify-content: center; }
+.sectionHeading h2 { font-size: 19px; letter-spacing: -.7px; margin: 0; }
+.sectionHeading a { position: absolute; right: 7px; text-decoration: none; color: var(--orange); font-size: 12px; }
+.sectionHeading a span { font-size: 20px; vertical-align: -2px; margin-left: 3px; }
+.categoryGrid { display: grid; grid-template-columns: repeat(8, 1fr); gap: 19px; }
+.categoryGrid a { text-decoration: none; color: var(--ink); text-align: center; font-size: 12px; font-weight: 600; }
+.categoryGrid img { display: block; aspect-ratio: 1; border-radius: 50%; width: 100%; object-fit: cover; background: #f3f3f3; margin-bottom: 12px; }
+.status { min-height: 137px; display: grid; place-content: center; text-align: center; color: #666; }
+.status p { margin: 0 0 12px; }
+.status button { justify-self: center; border: 0; border-radius: 4px; background: var(--orange); color: white; padding: 8px 18px; cursor: pointer; }
+
+@media (max-width: 900px) {
+  .container { padding-left: 24px; padding-right: 24px; }
+  .categoryGrid { gap: 12px; }
+}
+
+@media (max-width: 620px) {
+  .categories { padding-top: 30px; padding-bottom: 31px; }
+  .centered { justify-content: flex-start; }
+  .categoryGrid { grid-template-columns: repeat(4, 1fr); row-gap: 22px; }
+  .categoryGrid a { font-size: 11px; }
+  .sectionHeading h2 { font-size: 18px; }
+}

@@ -1,0 +1,6 @@
+.wrap { max-width: 1320px; margin: auto; }
+.crumb { height: 52px; padding-top: 17px; color: #777; font-size: 11px; }
+.layout { display: grid; grid-template-columns: 317px 1fr; gap: 39px; }
+.message { min-height: 430px; display: grid; place-content: center; color: #666; }
+@media(max-width:1000px) { .wrap { padding: 0 20px; } .layout { grid-template-columns: 250px 1fr; gap: 20px; } }
+@media(max-width:700px) { .wrap { padding: 0 15px; } .layout { display: block; } }

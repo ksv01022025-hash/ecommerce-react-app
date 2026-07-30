@@ -1,0 +1,17 @@
+.card { border: 1px solid #e5e5e5; border-radius: 7px; overflow: hidden; padding-bottom: 9px; }
+.pic { height: 166px; background: #f5f5f4; position: relative; }
+.pic img { width: 100%; height: 100%; object-fit: cover; }
+.pic i { position: absolute; z-index: 1; right: 14px; top: 10px; font-style: normal; color: #ff3515; font-size: 22px; }
+.card:nth-child(1) img, .card:nth-child(2) img, .card:nth-child(4) img { object-position: center; }
+.card:nth-child(5) img, .card:nth-child(6) img { object-position: center 18%; }
+.card h2, .card p { margin-left: 14px; margin-right: 14px; }
+.card h2 { font-size: 12px; margin-top: 9px; margin-bottom: 4px; }
+.card h2 a { color: inherit; text-decoration: none; }
+.stars { color: #ff9c00; font-size: 12px; margin-top: 0; margin-bottom: 4px; }
+.stars small { color: #555; font-size: 9px; }
+.price { font-size: 14px; font-weight: 700; margin-top: 0; margin-bottom: 10px; }
+.price del { font-size: 10px; color: #888; font-weight: 400; }
+.price b { font-size: 10px; color: var(--orange); }
+.buttons { display: grid; grid-template-columns: 1fr 59px; gap: 10px; margin: 0 14px; }
+.buttons button { height: 28px; background: #fff; border: 1px solid #ddd; border-radius: 4px; font: 10px "DM Sans"; }
+@media(max-width:650px) { .card { min-width: 250px; } .pic { height: 175px; } }

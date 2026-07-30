@@ -1,0 +1,106 @@
+.siteHeader {
+  height: 71px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  padding: 0 4.65%;
+  gap: 55px;
+  background: #fff;
+  position: relative;
+  z-index: 1000;
+  isolation: isolate;
+}
+
+.brand { font-size: 26px; font-weight: 700; letter-spacing: -1.8px; color: var(--ink); text-decoration: none; }
+.brand span { color: var(--orange); }
+.navLinks { display: flex; align-items: center; gap: 29px; flex: 1; }
+.navLinks a { color: var(--ink); text-decoration: none; font-size: 13px; }
+.navLinks .active { color: var(--ink); font-weight: 700; }
+.headerActions { display: flex; align-items: center; gap: 18px; }
+.search {
+  height: 37px;
+  width: 187px;
+  background: #f6f6f6;
+  border: 1px solid #e8e8e8;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 11px;
+  color: #8b8b8b;
+  font-size: 11px;
+}
+.search input { width: 100%; min-width: 0; border: 0; outline: 0; background: transparent; color: var(--ink); font: 11px "DM Sans"; }
+.search input::placeholder { color: #8b8b8b; opacity: 1; }
+.search button { border: 0; background: transparent; padding: 0; color: #111; font-size: 24px; line-height: 1; cursor: pointer; }
+.iconButton { border: 0; background: transparent; font-size: 27px; line-height: 1; padding: 0; position: relative; cursor: pointer; }
+.wishlist { color: var(--ink); text-decoration: none; }
+.wishlist em { background: var(--orange); color: #fff; position: absolute; top: -7px; right: -8px; min-width: 16px; height: 16px; padding: 0 3px; display: grid; place-items: center; border-radius: 99px; font: 10px Arial; font-style: normal; }
+.account { position: relative; }
+.accountMenu { position: absolute; z-index: 20; top: calc(100% + 17px); right: -20px; width: 205px; padding: 9px; border: 1px solid #e8e8e8; border-radius: 7px; background: #fff; box-shadow: 0 12px 30px rgb(0 0 0 / 14%); }
+.accountMenu::before { content: ""; position: absolute; right: 24px; top: -6px; width: 10px; height: 10px; background: #fff; border-left: 1px solid #e8e8e8; border-top: 1px solid #e8e8e8; transform: rotate(45deg); }
+.accountMenu p { margin: 0 4px 7px; padding: 6px 7px 10px; border-bottom: 1px solid #eee; }
+.accountMenu b, .accountMenu small { display: block; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.accountMenu b { font-size: 12px; }
+.accountMenu small { margin-top: 3px; color: #777; font-size: 10px; }
+.accountMenu a, .accountMenu button { display: block; width: 100%; border: 0; border-radius: 4px; background: transparent; padding: 9px 10px; color: var(--ink); text-align: left; text-decoration: none; font: 12px "DM Sans"; cursor: pointer; }
+.accountMenu a:hover, .accountMenu button:hover { background: #fff3ec; color: var(--orange); }
+.accountMenu button:disabled { cursor: wait; opacity: .6; }
+.bag { color: var(--ink); font-size: 24px; text-decoration: none; }
+.bag em {
+  background: var(--orange);
+  color: white;
+  position: absolute;
+  font: 10px Arial;
+  top: -6px;
+  right: -6px;
+  width: 16px;
+  height: 16px;
+  display: grid;
+  place-items: center;
+  border-radius: 99px;
+  font-style: normal;
+}
+.mobileMenu { display: none; background: transparent; border: 0; font-size: 23px; }
+
+@media (max-width: 900px) {
+  .siteHeader { gap: 24px; }
+  .navLinks { gap: 15px; }
+  .navLinks a:nth-last-child(-n+2) { display: none; }
+}
+
+@media (max-width: 620px) {
+  .siteHeader { height: 62px; padding: 0 20px; }
+  .navLinks, .headerActions { display: none; }
+  .navLinks.menuOpen {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
+    padding: 8px 20px 14px;
+    background: #fff;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 8%);
+    z-index: 1;
+  }
+  .navLinks.menuOpen a {
+    display: block;
+    padding: 11px 0;
+  }
+  .mobileMenu {
+    display: block;
+    margin-left: auto;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    pointer-events: auto;
+    touch-action: manipulation;
+  }
+}

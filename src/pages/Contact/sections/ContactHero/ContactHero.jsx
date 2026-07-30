@@ -1,0 +1,2 @@
+import styles from './ContactHero.module.css'
+export default function ContactHero(){return <><div className={styles.breadcrumb}>Home <span>›</span> Contact Us</div><section className={styles.title}><div><h1>Contact Us</h1><p>We're here to help! Reach out to us for any<br/>questions, support, or feedback.</p></div><div className={styles.art}><span className={styles.plane}>➤</span><span className={styles.bubble}>⌁</span><span className={styles.envelope}>✉</span><span className={styles.headset}>◖◗</span></div></section></>}

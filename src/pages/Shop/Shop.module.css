@@ -1,0 +1,6 @@
+.wrap { max-width: 1380px; margin: auto; }
+.crumbs { height: 42px; display: flex; align-items: center; gap: 18px; color: #777; font-size: 11px; }
+.crumbs span { font-size: 19px; color: #888; }
+.layout { display: grid; grid-template-columns: 277px 1fr; gap: 27px; }
+@media(max-width:1000px) { .wrap { padding: 0 20px; } .layout { grid-template-columns: 230px 1fr; gap: 18px; } }
+@media(max-width:700px) { .wrap { padding: 0 15px; } .layout { display: block; } .crumbs { height: 38px; } }

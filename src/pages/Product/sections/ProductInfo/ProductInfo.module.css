@@ -1,0 +1,20 @@
+.info h1 { font-size: 24px; margin: 8px 0; }
+.stars { color: #ff9c00; }
+.stars span { color: #333; font-size: 11px; }
+.price { font-size: 24px; font-weight: 700; margin: 10px 0 4px; }
+.price del { font-size: 13px; color: #888; font-weight: 400; }
+.price b { color: var(--orange); font-size: 12px; background: #fff0e8; padding: 4px; }
+.description { line-height: 1.7; margin: 15px 0; }
+.info ul { font-size: 10px; line-height: 1.9; list-style: "◉  "; }
+.stock { border-top: 1px solid #eee; padding-top: 10px; color: #0a8a43; font-weight: 600; }
+.stock b { float: right; color: var(--orange); font-size: 10px; }
+.quantity button { border: 1px solid #ddd; background: white; height: 29px; min-width: 28px; }
+.cart, .buy { width: 100%; height: 38px; border-radius: 4px; font-weight: 600; }
+.cart { border: 0; background: var(--orange); color: white; }
+.buy { background: white; color: var(--orange); border: 1px solid var(--orange); margin-top: 8px; }
+.cart:disabled, .buy:disabled { cursor: not-allowed; opacity: .5; }
+.mini { display: flex; justify-content: space-between; margin-top: 15px; }
+.mini span { font-size: 10px; font-weight: 600; }
+.mini small { display: block; font-size: 8px; color: #555; margin-top: 3px; }
+
+@media(max-width:700px) { .info h1 { margin-top: 25px; } }
