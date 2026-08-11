@@ -11,7 +11,7 @@ import NewArrivals from "./pages/NewArrivals";
 import OrderHistory from "./pages/OrderHistory";
 import Profile from "./pages/Profile";
 import Shop from "./pages/Shop";
-import WishList from "./pages/WishLIst";
+import WishList from "./pages/WishList";
 import Product from "./pages/Product";
 import Layout from "./Layout.jsx";
 import ForgotPassword from "./pages/PasswordReset/ForgotPassword";
