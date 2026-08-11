@@ -3,3 +3,7 @@
 .page h1 { margin: 0 0 10px; font-size: 24px; }
 .page p { margin: 0 0 20px; color: #666; line-height: 1.6; }
 .page a { color: #ff5018; font-weight: 700; }
+.actions { display: flex; align-items: center; justify-content: center; gap: 18px; }
+.actions button { border: 0; border-radius: 8px; padding: 10px 16px; background: #ff5018; color: #fff; font: inherit; font-weight: 700; cursor: pointer; }
+.actions button:hover { background: #e8430d; }
+.actions button:focus-visible, .page a:focus-visible { outline: 3px solid rgb(255 80 24 / 30%); outline-offset: 3px; }

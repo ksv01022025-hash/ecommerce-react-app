@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation, useNavigate, useSearchParams } from "react-router-dom";
 import { useLoginMutation, useRegisterMutation } from "../../../../redux/api/authApi";
+import { buildGoogleOAuthUrl } from "../../oauth";
 import styles from "./LoginForm.module.css";
 
 const socialProviders = [
@@ -141,7 +142,7 @@ function LoginForm() {
             <div className={styles.social}>
               {socialProviders.map(([icon, name]) => (
                 name === "Google"
-                  ? <a className={styles.google} href={`${apiBaseUrl}/oauth/google`} key={name} onClick={() => sessionStorage.setItem("oauthReturnTo", location.state?.from || "/")}>{icon} Continue with Google</a>
+                  ? <a className={styles.google} href={buildGoogleOAuthUrl(apiBaseUrl)} key={name} onClick={() => sessionStorage.setItem("oauthReturnTo", location.state?.from || "/")}>{icon} Continue with Google</a>
                   : <button disabled title={`${name} sign-in is not configured`} type="button" key={name}>{icon} {name}</button>
               ))}
             </div>
